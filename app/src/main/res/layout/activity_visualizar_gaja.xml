@@ -5,17 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main"
-    android:padding="15dp"
-    >
+    tools:context=".VisualizarGaja"
+    android:padding="25dp">
 
     <TextView
-        android:id="@+id/form_title"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inserir Mocinha"
+        android:text="Visualizar Mocinha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -29,21 +26,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="2"
-        android:layout_below="@id/form_title">
+        android:layout_below="@id/tvTitle"
+
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nome"/>
-        <EditText
-            android:id="@+id/edNome"
+        <TextView
+            android:id="@+id/tvNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Idade"/>
-        <EditText
-            android:id="@+id/edIdade"
+        <TextView
+            android:id="@+id/tvIdade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -52,14 +51,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Telefone"/>
-        <EditText
-            android:id="@+id/edTelefone"
+        <TextView
+            android:id="@+id/tvTelefone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"/>
 
     </GridLayout>
-
-
-
 </RelativeLayout>
